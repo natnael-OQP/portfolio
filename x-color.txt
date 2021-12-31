@@ -1,0 +1,9 @@
+lighter #ccd6f6
+gray= #8892b0 
+green #64ffda
+
+Family for default => Calibre,
+Family for buttons => SF Mono,
+
+colors = https://coolors.co/0a192f-172a45-303c55-8892b0-a8b2d1-ccd6f6-64ffda-e6f1ff
+best portfolio => https://brittanychiang.com/
