@@ -5,7 +5,9 @@ import { AiFillGithub } from "react-icons/ai";
 import { BsTelegram } from "react-icons/bs";
 const Sidebar = () => {
 	return (
-		<div className=" rounded-xl bg-[#172A45] select-none w-full col-span-full lg:col-span-3 p-4 py-12 sd br">
+		<div
+			
+			className=" rounded-xl bg-[#172A45] select-none w-full max-h-[550px] lg:sticky lg:top-10  col-span-full lg:col-span-3 p-4 py-12 sd br" >
 			<div className="relative w-20 h-20 mx-auto overflow-hidden rounded-full bg-gray-50">
 				<Image
 					objectFit="cover"
@@ -53,10 +55,12 @@ const Sidebar = () => {
 					<span className="sideh5" >09-41-24-87-99</span>
 				</a>
 				{/* Email Address */}
-				<a href="mailto:makiya112545@gmail.com" className="justify-end fx min-w-[70%]">
+				<button
+					onClick={() => window.open("mailto:makiya112545@gmail.com")}
+					className="justify-end fx min-w-[70%]">
 					<MailIcon className="h-5" />
-					<span className="sideh5" >makiya112545@gmail.com</span>
-				</a>
+					<span className="sideh5">makiya112545@gmail.com</span>
+				</button>
 			</div>
 		</div>
 	);
