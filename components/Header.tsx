@@ -3,15 +3,15 @@ import { useState } from "react";
 const Header = () => {
 	const [open, setOpen] = useState(false);
 	return (
-		<div className=" absolute top-3 right-6 mb-1 h-16 select-none transition ease-in-out transform duration-200 ">
+		<div className="absolute h-16 mb-1 transition duration-200 ease-in-out transform select-none  top-3 right-6">
 			{open ? (
 				<>
 					{/*  <!------- off ----->*/}
 					<span
 						onClick={() => setOpen(!open)}
-						className="border rounded-full border-grey flex items-center justify-between cursor-pointer w-14 transition ease-in-out transform duration-200 "
+						className="flex items-center justify-between transition duration-200 ease-in-out transform border rounded-full cursor-pointer border-grey w-14 "
 					>
-						<span className="rounded-full border w-6 h-6 border-grey shadow-inner bg-white shadow"></span>
+						<span className="w-6 h-6 bg-white border rounded-full shadow shadow-inner border-grey"></span>
 						<span> 🌜</span>
 					</span>
 				</>
@@ -20,10 +20,10 @@ const Header = () => {
 					{/*  <!------- on ----->*/}
 					<span
 						onClick={() => setOpen(!open)}
-						className="border rounded-full border-grey flex items-center cursor-pointer w-14 bg-green justify-between transition ease-in-out transform duration-200"
+						className="flex items-center justify-between transition duration-200 ease-in-out transform border rounded-full cursor-pointer border-grey w-14 bg-green"
 					>
 						<span>🌞 </span>
-						<span className="rounded-full border w-6 h-6 border-grey shadow-inner bg-white "></span>
+						<span className="w-6 h-6 bg-white border rounded-full shadow-inner border-grey "></span>
 					</span>
 				</>
 			)}
