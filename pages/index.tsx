@@ -1,8 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Sidebar from '../components/Sidebar'
+import { GetStaticProps } from 'next';
+import Head from 'next/head';
 
-export default function Home() {
+export default function Home({about}) {
   return (
     <div>
       <Head>
@@ -11,8 +10,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        
+        <div className="px-8 pt-8 ">
+          <h5 className="py-2 font-mono text-base text-color1" >{about.name}</h5>
+          <h1 className="py-2 text-6xl font-bold text-color3" >{about.title1}</h1>
+          <h1 className="text-6xl font-bold text-color2" >{about.title2}</h1>
+        </div>
       </main>
     </div>
   )
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const about = await fetch('http://localhost:3000/api/about').then((res) => res.json());
+  
+  return {
+    props: {
+      about,
+    }
+  };
 }
