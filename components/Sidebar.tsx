@@ -3,11 +3,15 @@ import { LocationMarkerIcon, MailIcon } from "@heroicons/react/outline";
 import { PhoneIcon } from "@heroicons/react/solid";
 import { AiFillGithub } from "react-icons/ai";
 import { BsTelegram } from "react-icons/bs";
+
+
+
+
 const Sidebar = () => {
 	return (
 		<div
-			
-			className=" rounded-xl bg-[#172A45] select-none w-full max-h-[550px] lg:sticky lg:top-10  col-span-full lg:col-span-3 p-4 py-12 sd br" >
+
+			className=" rounded-xl bg-[#0a192f] select-none w-full max-h-[550px] lg:sticky lg:top-10  col-span-full lg:col-span-3 p-4 py-12 sd br" >
 			<div className="relative w-20 h-20 mx-auto overflow-hidden rounded-full bg-gray-50">
 				<Image
 					objectFit="cover"
@@ -20,7 +24,7 @@ const Sidebar = () => {
 				Natnael <span className="text-[#64ffda]" >Abebe</span>
 			</h3>
 			{/* Reactjs developer  */}
-			<h4 className="py-[3px] mt-1 md:mt-2 mb-4 text-sm text-[#ccd6f6]    font-semibold bg-[#303C55]  fc  rounded-full duration-500 hover:animate-bounce ">
+			<h4 className="py-[3px] mt-1 md:mt-2 mb-4 text-sm text-[#ccd6f6]    font-semibold bg-[#172A45]  fc  rounded-full duration-500 hover:animate-bounce ">
 				Reactjs/nextjs developer
 			</h4>
 			{/* Telegram  */}
@@ -39,26 +43,26 @@ const Sidebar = () => {
 			</a>
 			{/*address */}
 			<div
-				className="flex flex-col items-center gap-2 py-5 mt-10 bg-[#303C55] text-[#0A192F] rounded-lg"
+				className="flex flex-col items-center gap-2 py-5 mt-10 bg-[#172A45] text-[#0A192F] rounded-lg"
 				style={{
 					marginLeft:'-1rem',
 					marginRight:'-1rem',
 				}}
 			>
 				<div className=" justify-end fx min-w-[70%] ">
-					<LocationMarkerIcon className="h-5" />
+					<LocationMarkerIcon className="h-5 text-color2" />
 					<span className="sideh5" >Gondar</span>
 				</div>
 				{/* Phone Number */}
 				<a href="tel:+251941248799" className="justify-end fx min-w-[70%]">
-					<PhoneIcon className="h-5" />
+					<PhoneIcon className="h-5 text-color2" />
 					<span className="sideh5" >09-41-24-87-99</span>
 				</a>
 				{/* Email Address */}
 				<button
 					onClick={() => window.open("mailto:makiya112545@gmail.com")}
 					className="justify-end fx min-w-[70%]">
-					<MailIcon className="h-5" />
+					<MailIcon className="h-5 text-color2" />
 					<span className="sideh5">makiya112545@gmail.com</span>
 				</button>
 			</div>
