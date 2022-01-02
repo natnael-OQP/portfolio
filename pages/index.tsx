@@ -1,8 +1,10 @@
 import { ChevronDoubleRightIcon } from '@heroicons/react/solid';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
+import Link from 'next/link';
+import { IAbout } from '../interface';
 
-export default function Home({about}) {
+const  Home:React.FC<{about:IAbout}> = ({about})=> {
   return (
     <div>
       <Head>
@@ -16,7 +18,7 @@ export default function Home({about}) {
           <h1 className="text-[65px] leading-none text-h font-bold text-color3" >{about.title1}</h1>
           <h1 className="text-[65px] leading-none font-bold text-color2" >{about.title2}</h1>
           <p className="pt-2 text-color2 w-[70%] font-medium text-sm font-popi  break-words py-8" >{about.description}</p>
-          <button className="px-4 py-3 mt-4 text-sm border rounded-md border-color1 text-color1 font-popi hover:bg-color1 hover:bg-opacity-10 fx" >
+          <button className="px-5 py-[14px] mt-4 text-[14px] border rounded-md border-color1 text-color1 hover:bg-color1 hover:bg-opacity-10 fx font-normal font-popi" >
             {about.buttonText}
             <ChevronDoubleRightIcon className="h-5 ml-2 animate-pulse" />
           </button>
@@ -32,6 +34,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       about,
-    }
+    },
+    revalidate:10,
   };
 }
+
+export default Home;
