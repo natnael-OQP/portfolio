@@ -7,12 +7,16 @@ const NavItem: FunctionComponent<{
     setActive: Function,
     name: string,
     route: string,
-}> = ({active,setActive,name,route}) => {
+    id:string,
+}> = ({active,setActive,name,route,id}) => {
     return (
             active !== name && (
-                <Link href={route} passHref >
-                    <button className="navBtn" onClick={() => setActive(name)}>{name}</button>
-                </Link>
+                <div className="flex items-baseline space-x-1 ">
+                    <span className="text-color1 text-xs font-mono" >{id}.</span>
+                    <Link href={route} passHref >
+                        <button className="navBtn" onClick={() => setActive(name)}>{name}</button>
+                    </Link>
+                </div>
         )
     )
 }
@@ -35,9 +39,9 @@ const Navbar = () => {
         >
             <h1 className="text-xl font-semibold tracking-wider border-b font-lg text-color1 border-color1" >{active}</h1>
             <div className="space-x-4 fx " >
-                <NavItem active={active} setActive={setActive} name={'About'} route={'/'}  />
-                <NavItem active={active} setActive={setActive} name={'Projects'} route={'projects'}  />
-                <NavItem active={active} setActive={setActive} name={'Resume'} route={'resume'}  />
+                <NavItem id='01' active={active} setActive={setActive} name={'About'} route={'/'}  />
+                <NavItem id='02' active={active} setActive={setActive} name={'Resume'} route={'resume'}  />
+                <NavItem id='03' active={active} setActive={setActive} name={'Projects'} route={'projects'}  />
             </div>
         </div>
     )
