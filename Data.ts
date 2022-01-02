@@ -1,14 +1,9 @@
-
-import { RiComputerLine } from "react-icons/ri";
-import { FaServer } from "react-icons/fa";
-import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
-import { MdDeveloperMode } from "react-icons/md";
 import { IProject, IAbout, ISkill } from "./interface";
-import { BsCircleFill } from "react-icons/bs";
+import { FaCaretRight } from "react-icons/fa";
 
 
 export const AboutData: IAbout = {
-    name: 'Hi, my name is',
+    name: 'Hi, my name is', 
     title1: 'Natnale Abebe.',
     title2: ' I build things for the web.',
     description: "I'm currently in my fourth year (out of five) studying computer science at University Of Gondar. I enjoy building exceptional digital experiences. Currently, I’m focused on building an E-commerce PWA site.   I'm experienced in developing  products for the web, from simple landing pages to full-fledged web apps.",
@@ -17,60 +12,96 @@ export const AboutData: IAbout = {
 // ---------------------------------------------------------------- languages 
     export const languages: ISkill[] = [
     {
-        Icon: BsCircleFill,
-        name: "Python",
+        Icon: FaCaretRight,
+        name: "CSS3",
         level: "45",
     },
     {
-        Icon: BsCircleFill,
-        name: "Java Script",
+        Icon: FaCaretRight,
+        name: "HTML5",
+        level: "45",
+    },
+    {
+        Icon: FaCaretRight,
+        name: "Sass",
+        level: "45",
+    },
+    {
+        Icon: FaCaretRight,
+        name: "Styled-Components",
+        level: "45",
+    },
+    {
+        Icon: FaCaretRight,
+        name: "JavaScript (ES6+)",
+        level: "45",
+    },
+    {
+        Icon: FaCaretRight,
+        name: "TypeScript",
         level: "60",
     },
     {
-        Icon: BsCircleFill,
-        name: "React Native",
+        Icon: FaCaretRight,
+        name: "ReactJS",
+        level: "60",
+    },
+    {
+        Icon: FaCaretRight,
+        name: "NextJs",
         level: "80",
     },
     {
-        Icon: BsCircleFill,
-        name: "React",
+        Icon: FaCaretRight,
+        name: "TailwindCss",
         level: "70",
     },
     {
-        Icon: BsCircleFill,
-        name: "Django",
+        Icon: FaCaretRight,
+        name: "Redux tool-kit",
         level: "80",
     },
     {
-        Icon: BsCircleFill,
-        name: "Bootstrap",
+        Icon: FaCaretRight,
+        name: "Firebase",
         level: "80",
     },
 ];
-// ---------------------------------------------------------------- tools 
+// ------------------------------------------------------- tools 
 
 export const tools: ISkill[] = [
     {
-        Icon: BsCircleFill,
-        name: "Figma",
+        Icon: FaCaretRight,
+        name: "yarn",
         level: "85",
     },
     {
-        Icon: BsCircleFill,
-        name: "Photoshop",
+        Icon: FaCaretRight,
+        name: "git and github",
         level: "45",
     },
     {
-        Icon: BsCircleFill,
-        name: "Illustrator",
+        Icon: FaCaretRight,
+        name: "axios",
         level: "60",
     },
     {
-        Icon: BsCircleFill,
-        name: "Framer",
+        Icon: FaCaretRight,
+        name: "SWR",
         level: "45",
     },
 ];
+// ---------------------
+export const Learning = [
+    {
+        Icon: FaCaretRight,
+        name:"typeScript"
+    },
+    {
+        Icon: FaCaretRight,
+        name:"PWA"
+    }
+]
 // ---------------------------------------------------------------- Project 
 
 export const projects: IProject[] = [
