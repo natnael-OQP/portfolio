@@ -1,3 +1,4 @@
+import { ChevronDoubleRightIcon } from '@heroicons/react/solid';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 
@@ -10,10 +11,15 @@ export default function Home({about}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="px-8 pt-8 ">
-          <h5 className="py-2 font-mono text-base text-color1" >{about.name}</h5>
-          <h1 className="py-2 text-6xl font-bold text-color3" >{about.title1}</h1>
-          <h1 className="text-6xl font-bold text-color2" >{about.title2}</h1>
+        <div className="px-8 pt-5 pb-10 space-y-4 ">
+          <h5 className="pb-2 font-mono font-base normal text- text-color1" >{about.name}</h5>
+          <h1 className="text-[65px] leading-none text-h font-bold text-color3" >{about.title1}</h1>
+          <h1 className="text-[65px] leading-none font-bold text-color2" >{about.title2}</h1>
+          <p className="pt-2 text-color2 w-[70%] font-medium text-sm font-popi  break-words py-8" >{about.description}</p>
+          <button className="px-4 py-3 mt-4 text-sm border rounded-md border-color1 text-color1 font-popi hover:bg-color1 hover:bg-opacity-10 fx" >
+            {about.buttonText}
+            <ChevronDoubleRightIcon className="h-5 ml-2 animate-pulse" />
+          </button>
         </div>
       </main>
     </div>
