@@ -37,6 +37,6 @@ body{
         @apply border-l border-gray-900
     }
     .navBtn{
-        @apply text-base font-semibold font-popi tracking-wide text-color3 
+        @apply text-sm font-medium font-popi tracking-wide text-color3 
     }
 }
