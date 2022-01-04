@@ -1,10 +1,8 @@
 import { ChevronDoubleRightIcon } from '@heroicons/react/solid';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
-import { IAbout } from '../interface';
-
-const  Home:React.FC<{about:IAbout}> = ({about})=> {
+import {AboutData} from '../Data'
+const  Home = ({about})=> {
   return (
     <div>
       <Head>
@@ -29,13 +27,13 @@ const  Home:React.FC<{about:IAbout}> = ({about})=> {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const about = await fetch('http://localhost:3000/api/about').then((res) => res.json());
+  const about = AboutData;
   
   return {
     props: {
       about,
     },
-    revalidate:10,
+    // revalidate:10,
   };
 }
 
