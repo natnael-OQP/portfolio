@@ -101,13 +101,13 @@ export const Learning = [
 export const projects: IProject[] = [
     // E-commerces -1 
     { 
-        name: "E-Suke(E-commerces)",
+        name: "E-Suke",
         description:"This app show products user can add items to the cart and user can remove items from the cart Realtime Reviews Chat auth and you can log in with your Google account(authentication), items detail page, and much more ",
         image_path: "/images/e-suke.png",
         deployed_url: "https://e-suke.netlify.app/",
         github_url: "https://github.com/natnael-OQP/ecommerce-2.0",
         category: ["react"],
-        key_techs: ["React", "Redux", "reduxjs/toolkit","Firebase","styled Components"],
+        key_techs: ["React",  "reduxjs/toolkit","Firebase",],
     },
     // ኢትዮ-Real-Estate -2
     {
@@ -117,7 +117,7 @@ export const projects: IProject[] = [
         github_url: "https://github.com/natnael-OQP/real-estate-site",
         category: ["Nextjs", "react"],
         description:"ኢትዮ-Real-Estate is an amazing Real Estate Application. With rental homes and for-sale properties, advanced property filtering, property details page , and much more, ",
-        key_techs: ["React", "Nextjs", "chakra-ui","millify", "axios",],
+        key_techs: [ "Nextjs", "chakra-ui", "axios",],
     },
     // airbnb clone -3
     {
@@ -127,7 +127,7 @@ export const projects: IProject[] = [
         github_url: "https://github.com/natnael-OQP/Airbnb-clone",
         category: ["Nextjs", "react"],
         description:"a simple airbnb clone build with Nextjs(ssg and ssr), tailwindcss, Mapbox, axios ",
-        key_techs: ["React", "Nextjs", "tailwindcss","Mapbox", "axios",],
+        key_techs: [ "Nextjs", "tailwindcss","Mapbox",],
     },
     // Piper chat -4 
     {
@@ -137,7 +137,7 @@ export const projects: IProject[] = [
         github_url: "https://github.com/natnael-OQP/piper-chat",
         category: ["NextJs", "react"],
         description:" Typical Social Media App where one can post,like ,comment,delate your posts, Populated with authentication, etc...",
-        key_techs: ["React", "NextJS","next-auth","tailwindcss", "Firebase v9","recoil"],
+        key_techs: ["NextJS","tailwindcss", "Firebase.v9"],
     },
     // Netflix Clone -5
     {
@@ -147,7 +147,7 @@ export const projects: IProject[] = [
         github_url: "https://github.com/natnael-OQP/netflix-clone",
         category: ["", "react"],
         description:"a simple netflix clone ypu can watch trailers  build with reactjs,firebase,redux",
-        key_techs: ["React","reduxjs/toolkit", "firebase","styled-components","axios",],
+        key_techs: ["ReactJS","reduxjs/toolkit", "Firebase"],
     },
     // Gmail clone -6
     {
@@ -156,7 +156,7 @@ export const projects: IProject[] = [
         github_url: "https://github.com/natnael-OQP/gmail-clone",
         category: [ "react"],
         description:" Typical Social Media App where one can post,like ,comment etc",
-        key_techs: ["React","reduxjs/toolkit", "firebase","styled-components","axios",],
+        key_techs: ["ReactJS", "firebase","Redux",],
     },
     // Ethio chat -7
     {
@@ -165,7 +165,7 @@ export const projects: IProject[] = [
         github_url: "https://github.com/natnael-OQP/classroom",
         category: [ "react"],
         description:"Basic Realtime Chat App where one can create a room can talk to each other ",
-        key_techs: ["React","@reduxjs/toolkit","firebase","styled-components"],
+        key_techs: ["ReactJS","Redux","Firebase"],
     },
     // NGO Site -8
     {
@@ -174,6 +174,6 @@ export const projects: IProject[] = [
         github_url: "https://github.com/natnael-OQP/NGO",
         category: [ "react"],
         description:"One of the first projects on ReactJS",
-        key_techs: ["React","react-router","styled-components","react-scroll",],
+        key_techs: ["ReactJS","react-router","react-scroll",],
     },
 ];
