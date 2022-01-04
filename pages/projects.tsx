@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import {projects} from '../Data'
+import {projects as projectsData} from '../Data'
 import {FiExternalLink, FiGithub} from 'react-icons/fi'
-const Projects = () => {
+const Projects = ({projects}) => {
     return (
         <div className="px-2 min-h-screen  overflow-y-scroll scrollbar-hide">
             {/* Some Things I’ve Built */}
@@ -59,6 +59,15 @@ const Projects = () => {
             </div>
         </div>
     )
+}
+
+export const getServerSideProps= async () => {
+    
+    return {
+        props: {
+            projects:projectsData
+        }
+    };
 }
 
 export default Projects;
