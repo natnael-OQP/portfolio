@@ -13,26 +13,6 @@ export const AboutData: IAbout = {
     export const languages: ISkill[] = [
     {
         Icon: FaCaretRight,
-        name: "CSS3",
-        level: "45",
-    },
-    {
-        Icon: FaCaretRight,
-        name: "HTML5",
-        level: "45",
-    },
-    {
-        Icon: FaCaretRight,
-        name: "Sass",
-        level: "45",
-    },
-    {
-        Icon: FaCaretRight,
-        name: "Styled-Components",
-        level: "45",
-    },
-    {
-        Icon: FaCaretRight,
         name: "JavaScript (ES6+)",
         level: "45",
     },
@@ -53,22 +33,36 @@ export const AboutData: IAbout = {
     },
     {
         Icon: FaCaretRight,
-        name: "TailwindCss",
+        name: "Tailwind CSS",
         level: "70",
     },
+    // {
+    //     Icon: FaCaretRight,
+    //     name: "Redux tool-kit",
+    //     level: "80",
+    // },
+    // {
+    //     Icon: FaCaretRight,
+    //     name: "Firebase",
+    //     level: "80",
+    // },
+    // {
+    //     Icon: FaCaretRight,
+    //     name: "Styled-Components",
+    //     level: "45",
+    // },
     {
         Icon: FaCaretRight,
-        name: "Redux tool-kit",
-        level: "80",
+        name: "Git + Github",
+        level: "45",
     },
     {
         Icon: FaCaretRight,
-        name: "Firebase",
-        level: "80",
+        name: "SEO",
+        level: "45",
     },
 ];
 // ------------------------------------------------------- tools 
-
 export const tools: ISkill[] = [
     {
         Icon: FaCaretRight,
@@ -102,106 +96,84 @@ export const Learning = [
         name:"PWA"
     }
 ]
-// ---------------------------------------------------------------- Project 
+// ---------------------------------------------------------------- Project -------------------------------------------------------
 
 export const projects: IProject[] = [
+    // E-commerces -1 
     { 
-        name: "COVID Tracker",
-        description:
-        "This app shows a statistical vi about corona virus over the world",
-        image_path: "/images/covid.jpg",
-        deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
-        github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
+        name: "E-Suke(E-commerces)",
+        description:"This app show products user can add items to the cart and user can remove items from the cart Realtime Reviews Chat auth and you can log in with your Google account(authentication), items detail page, and much more ",
+        image_path: "/images/e-suke.png",
+        deployed_url: "https://e-suke.netlify.app/",
+        github_url: "https://github.com/natnael-OQP/ecommerce-2.0",
         category: ["react"],
-        key_techs: ["React", "Chart.js", "Material UI"],
+        key_techs: ["React", "Redux", "reduxjs/toolkit","Firebase","styled Components"],
     },
+    // ኢትዮ-Real-Estate -2
     {
-        name: "Algorithm Visualizer",
-        image_path: "/images/algoVisual.png",
-        deployed_url: "https://visual-algorithm.web.app/",
-        github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
-        category: ["react"],
-        description:
-        "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-        key_techs: ["React", "firebase", "Framer Motion"],
+        name: "ኢትዮ-Real-Estate",
+        image_path: "/images/real-estate.png",
+        deployed_url: "https://ema-real-estate-group.vercel.app/",
+        github_url: "https://github.com/natnael-OQP/real-estate-site",
+        category: ["Nextjs", "react"],
+        description:"ኢትዮ-Real-Estate is an amazing Real Estate Application. With rental homes and for-sale properties, advanced property filtering, property details page , and much more, ",
+        key_techs: ["React", "Nextjs", "chakra-ui","millify", "axios",],
     },
-
+    // airbnb clone -3
     {
-        name: "Dev Talks",
-        image_path: "/images/dev.jpg",
-        deployed_url: "https://dev-talks.herokuapp.com/",
-        github_url: "https://github.com/Dey-Sumit/Dev-talks",
-        category: ["node", "mongo", "react"],
-        description:
-        "Social Media app for developers who can share project,create posts,etc...",
-        key_techs: [
-        "React",
-        "Redux",
-        "Node",
-        "Express",
-        "Mongo",
-        "REST API",
-        "Bootstrap",
-        ],
+        name: "Airbnb Clone",
+        image_path: "/images/aribnb-clone.png",
+        deployed_url: "https://ema-group-airbnb-clone.vercel.app/",
+        github_url: "https://github.com/natnael-OQP/Airbnb-clone",
+        category: ["Nextjs", "react"],
+        description:"a simple airbnb clone build with Nextjs(ssg and ssr), tailwindcss, Mapbox, axios ",
+        key_techs: ["React", "Nextjs", "tailwindcss","Mapbox", "axios",],
     },
-
+    // Piper chat -4 
     {
-        name: "Realtime Chat App",
-        image_path: "/images/chatapp.jpg",
-        deployed_url: "https://sumit-chat.netlify.app/",
-        github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
-        category: ["node", "react"],
-        description:
-        "Basic Realtime Chat App where one can create a room can talk to each other",
-        key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
+        name: "Piper chat",
+        image_path: "/images/piper-caht.png",
+        deployed_url: "http://piper-chat.vercel.app/",
+        github_url: "https://github.com/natnael-OQP/piper-chat",
+        category: ["NextJs", "react"],
+        description:" Typical Social Media App where one can post,like ,comment,delate your posts, Populated with authentication, etc...",
+        key_techs: ["React", "NextJS","next-auth","tailwindcss", "Firebase v9","recoil"],
     },
-
+    // Netflix Clone -5
     {
-        name: "Tweeter Clone",
-        image_path: "/images/tweetme.jpg",
-        deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
-        github_url: "https://github.com/Dey-Sumit/tweetme",
-        category: ["django", "react"],
-        description:
-        "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
-        key_techs: ["React", "Django", "Django REST API"],
+        name: "Netflix Clone",
+        image_path: "/images/netflix-clone.png",
+        deployed_url: "https://netflix-clone-with-nathan.netlify.app/",
+        github_url: "https://github.com/natnael-OQP/netflix-clone",
+        category: ["", "react"],
+        description:"a simple netflix clone ypu can watch trailers  build with reactjs,firebase,redux",
+        key_techs: ["React","reduxjs/toolkit", "firebase","styled-components","axios",],
     },
-
+    // Gmail clone -6
     {
-        name: "Color Classification using tf.js",
-        image_path: "/images/color.jpg",
-        deployed_url: "!#",
-        github_url: "https://github.com/Dey-Sumit/color-classification",
-        category: ["express"],
-        description:
-        "Tried ML with JS :) | this app classifies a color using CNN algorithm in browser",
-        key_techs: ["Express", "TensorFlow.js", "Vanilla js"],
+        name: "Gmail Clone",
+        deployed_url: "https://gmail-clone-with-nathan.netlify.app/",
+        github_url: "https://github.com/natnael-OQP/gmail-clone",
+        category: [ "react"],
+        description:" Typical Social Media App where one can post,like ,comment etc",
+        key_techs: ["React","reduxjs/toolkit", "firebase","styled-components","axios",],
     },
+    // Ethio chat -7
     {
-        name: "YouTube using YouTube ",
-        image_path: "/images/youtubeClone.png",
-        deployed_url: "https://not-utube.web.app/",
-        github_url: "https://github.com/Dey-Sumit/youtube-clone-tutorial-up",
-        category: ["express"],
-        description:
-        'Full(almost) Functional YouTube replica where one can login with his/her youtube account to enjoy "not-YouTube".User can like a video,comment on a video & Much More ',
-        key_techs: [
-        "React",
-        "Redux",
-        "Firebase Auth",
-        "YouTube API",
-        "Sass",
-        "Bootstrap",
-        ],
+        name: "Ethio chat",
+        deployed_url: "https://etio-chat.netlify.app/",
+        github_url: "https://github.com/natnael-OQP/classroom",
+        category: [ "react"],
+        description:"Basic Realtime Chat App where one can create a room can talk to each other ",
+        key_techs: ["React","@reduxjs/toolkit","firebase","styled-components"],
     },
+    // NGO Site -8
     {
-        name: "Football App",
-        image_path: "/images/football.png",
-        deployed_url: "https://o-my-goal.web.app/",
-        github_url: "https://github.com/Dey-Sumit/football-app",
-        category: ["react"],
-        description:
-        "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
-        key_techs: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
+        name: "NGO site",
+        deployed_url: "https://etio.netlify.app/",
+        github_url: "https://github.com/natnael-OQP/NGO",
+        category: [ "react"],
+        description:"One of the first projects on ReactJS",
+        key_techs: ["React","react-router","styled-components","react-scroll",],
     },
 ];
