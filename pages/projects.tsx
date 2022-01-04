@@ -1,6 +1,7 @@
-import Image from 'next/image';
 import {projects as projectsData} from '../Data'
 import {FiExternalLink, FiGithub} from 'react-icons/fi'
+import MediumCard from '../components/mediumCard';
+import SmallCard from '../components/smallCard';
 const Projects = ({projects}) => {
     return (
         <div className="px-2 min-h-screen  overflow-y-scroll scrollbar-hide">
@@ -16,45 +17,39 @@ const Projects = ({projects}) => {
                 {/* Main project Container  */}
                 <div className="pt-4 " >
                     {
-                        projects.map((project) => (
+                        projects.map((project,i) => (
                             project.image_path && (
-                                <div className="  flex items-center -space-x-20 py-10 "
+                                <MediumCard
+                                    id={i}
                                     key={project.name}
-                                >
-                                    {/* image */}
-                                    <div className=" cursor-pointer transition duration-200 transform ease-in-out opacity-50 hover:opacity-90 bg-color1  relative w-[72%]  h-[320px] overflow-hidden rounded-lg " >
-                                        <Image className="opacity-30 hover:opacity-100" src={project.image_path} layout="fill"  objectFit="cover" alt={project.name} />
-                                    </div>
-                                    {/* info */}
-                                    <div className=" w-[50%] z-50 flex flex-col items-end ">
-                                        <h6 className=" text-xs font-bold  text-color1 py-2 font-mono">Featured Project</h6>
-                                        <h1 className="text-2xl font-semibold font-popi text-color3" >{project.name}</h1>
-                                        <p className="bg-[#112240] text-color2 py-4 pr-4 pl-6 rounded-lg text-right my-4">{project.description}</p>
-                                        <ul className="flex justify-end  gap-x-3 w-full  break-words whitespace-nowrap" >
-                                            {
-                                                project.key_techs.map((tech) => (
-                                                    <li className="text-sm font-mono text-color2 capitalize font-semibold" key={tech}>{tech}</li>
-                                                ))
-                                            }
-                                        </ul>
-                                        {/* links */}
-                                        <div className="py-4 px-6 flex  space-x-4">
-                                            <a href={project.github_url} target="_blank" rel="noreferrer"  >
-                                                <FiGithub className="h-5 w-5 text-color3 " />
-                                            </a>
-                                            <a href={project.deployed_url} target="_blank" rel="noreferrer"  >
-                                                <FiExternalLink className="h-5 w-5 text-color3 " />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                    name={project.name}
+                                    image_path={project.image_path}
+                                    description={project.description}
+                                    github_url={project.github_url}
+                                    deployed_url={project.deployed_url}
+                                    key_techs={project.key_techs}   
+                                />
                             )
                         ))
                     }
                 </div>
                 {/* All project Container  */}
-                <div>
-                    
+                <div className="mt-20 pb-5" >
+                    <h1 className="text-center text-3xl text-color3  font-bold font-popi pt-4 pb-10">Other Noteworthy Projects</h1>
+                    <div className="grid grid-cols-1 md:mx-auto md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4  " >
+                        {
+                            projects.map((project) => (
+                                    <SmallCard
+                                        key={project.name}
+                                        name={project.name}
+                                        description={project.description}
+                                        github_url={project.github_url}
+                                        deployed_url={project.deployed_url}
+                                        key_techs={project.key_techs}   
+                                    />
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
         </div>
