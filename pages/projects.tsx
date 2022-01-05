@@ -1,10 +1,16 @@
 import {projects as projectsData} from '../Data'
-import {FiExternalLink, FiGithub} from 'react-icons/fi'
 import MediumCard from '../components/mediumCard';
 import SmallCard from '../components/smallCard';
+import Head from 'next/head';
 const Projects = ({projects}) => {
     return (
         <div className="px-2 min-h-screen  overflow-y-scroll scrollbar-hide">
+             {/* Header  */}
+            <Head>
+                <title>Projects</title>
+                <meta name="description" content="natnael portfolio project showcase" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             {/* Some Things I’ve Built */}
             <div>
                 {/* title */}

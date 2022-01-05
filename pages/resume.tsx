@@ -1,9 +1,16 @@
 import { languages } from "../Data";
 import { ISkill } from "../interface";
+import Head from 'next/head';
 
 const Resume = () => {    
     return (
         <div className="pt-6 py-10 px-1 md:px-10" >
+            {/* Header  */}
+            <Head>
+                <title>Skill</title>
+                <meta name="description" content="natnael skills and education level " />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <h1 className="text-color3  text-3xl fx font-popi font-semibold font-popi space-x-4 tracking-wider">
                 <span className="text-2xl text-color1  font-mono font-normal mr-1 " >02.</span> Skills
                 <div className="bg-[#ccd6f6] h-[.03rem] block opacity-10 z-50  overflow-hidden w-[300px]" />
