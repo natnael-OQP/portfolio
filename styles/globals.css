@@ -45,10 +45,10 @@ body{
         @apply hover:scale-105 transition transform ease-in-out duration-200 tracking-wide hover:tracking-wider
     }
     .sideh3{
-        @apply text-sm font-semibold hover:font-medium  font-mono text-[#64FFDA]
+        @apply text-sm font-semibold hover:font-medium  font-mono text-color2
     }
     .sideh5{
-        @apply text-sm font-semibold text-[#E6F1FF]
+        @apply text-base font-medium text-color3 font-popi text-right
     }
     .sd{
         @apply shadow-[#303C55] shadow-md
