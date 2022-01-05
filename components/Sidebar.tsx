@@ -16,7 +16,7 @@ const Sidebar = () => {
 				<Image
 					objectFit="cover"
 					layout="fill"
-					src="https://avatars.githubusercontent.com/u/81810944?v=4"
+					src="https://lh3.googleusercontent.com/ogw/ADea4I4wNCZu-NGCYjQtg4WYPzUkvKh1LWTdTQYwmORL=s83-c-mo"
 					alt="user avatar"
 				/>
 			</div>
