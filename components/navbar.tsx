@@ -13,7 +13,7 @@ const NavItem: FunctionComponent<{
             active !== name && (
                 <div className="flex items-baseline space-x-1 ">
                     <span className="text-color1 text-xs font-mono" >{id}.</span>
-                    <Link href={route} passHref >
+                    <Link href={route} passHref scroll={false} >
                         <button className="navBtn" onClick={() => setActive(name)}>{name}</button>
                     </Link>
                 </div>
