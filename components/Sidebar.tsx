@@ -24,18 +24,18 @@ const Sidebar = () => {
 				Natnael <span className="text-[#64ffda]" >Abebe</span>
 			</h3>
 			{/* Reactjs developer  */}
-			<h4 className="py-[3px] mt-1 md:mt-2 mb-4 text-sm text-[#ccd6f6]    font-semibold bg-[#172A45]  fc  rounded-full duration-500 hover:animate-bounce ">
+			<h4 className="py-[3px] mt-1 md:mt-2 mb-4 text-sm text-[#ccd6f6]    font-semibold bg-[#112240]  fc  rounded-full duration-500 hover:animate-bounce ">
 				Reactjs/nextjs developer
 			</h4>
 			{/* Telegram  */}
-			<a href="https://t.me/natnaelOPQ" target="_blank" className="py-2 text-[#64FFDA] fc gap-[8px] an hover:animate-pulse " rel="noreferrer">
+			<a href="https://t.me/natnaelOPQ" target="_blank" className="py-2 text-color3 fc gap-[8px] an hover:animate-pulse " rel="noreferrer">
 				<BsTelegram className=" h-7 w-7" />
 				<span className="sideh3">
 					Via Telegram
 				</span>
 			</a>
 			{/* git-Hub  */}
-			<a href="https://github.com/natnael-OQP" target="_blank" className="py-2 text-[#64FFDA] fc an hover:animate-pulse " rel="noreferrer" >
+			<a href="https://github.com/natnael-OQP" target="_blank" className="py-2 text-color3 fc an hover:animate-pulse " rel="noreferrer" >
 				<AiFillGithub className=" h-7 w-7" />
 				<span className="font-mono sideh3">
 					My Github repo
@@ -43,25 +43,25 @@ const Sidebar = () => {
 			</a>
 			{/*address */}
 			<div
-				className="flex flex-col items-center gap-2 py-5 mt-10 bg-[#172A45] text-[#0A192F] rounded-lg"
+				className="flex flex-col pr-4  gap-2 py-5 mt-10 bg-[#112240] text-[#0A192F] rounded-lg"
 				style={{
 					marginLeft:'-1rem',
 					marginRight:'-1rem',
 				}}
 			>
-				<div className=" justify-end fx min-w-[70%] ">
+				<div className=" justify-end flex gap-x-3 items-center min-w-[70%] ">
 					<LocationMarkerIcon className="h-5 text-color2" />
 					<span className="sideh5" >Gondar</span>
 				</div>
 				{/* Phone Number */}
-				<a href="tel:+251941248799" className="justify-end fx min-w-[70%]">
+				<a href="tel:+251941248799" className="justify-end flex gap-x-3 items-center min-w-[70%]">
 					<PhoneIcon className="h-5 text-color2" />
 					<span className="sideh5" >09-41-24-87-99</span>
 				</a>
 				{/* Email Address */}
 				<button
 					onClick={() => window.open("mailto:makiya112545@gmail.com")}
-					className="justify-end fx min-w-[70%]">
+					className="justify-end flex gap-x-3 items-center min-w-[70%]">
 					<MailIcon className="h-5 text-color2" />
 					<span className="sideh5">makiya112545@gmail.com</span>
 				</button>
