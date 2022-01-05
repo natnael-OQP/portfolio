@@ -9,8 +9,7 @@ const MediumCard = ({id,name,image_path,description,github_url,deployed_url,key_
             >
                 {/* image */}
                 <div className=" cursor-pointer transition duration-200 transform ease-in-out bg-[#112240]  sm:opacity-50 hover:opacity-90 sm:bg-color1  sm:relative w-full h-[350px]   sm:w-[72%] sm:h-[320px] overflow-hidden rounded-lg " >
-                    <Image placeholder={'blur'}
-                        className="opacity-5 sm:opacity-50 sm:hover:opacity-100" src={image_path} layout="fill"  objectFit="cover" alt={name} />
+                    <Image className="opacity-5 sm:opacity-50 sm:hover:opacity-100" src={image_path} layout="fill"  objectFit="cover" alt={name} />
                     {/* info */}
                     <div className=" sm:hidden absolute top-4 left-4 sm:w-[50%] z-50 flex flex-col items-start sm:items-end ">
                         <h6 className=" text-xs font-bold  text-color1 py-2 font-mono">Featured Project</h6>
