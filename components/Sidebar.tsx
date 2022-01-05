@@ -11,7 +11,7 @@ const Sidebar = () => {
 	return (
 		<div
 
-			className=" rounded-xl bg-[#0a192f] select-none w-full max-h-[550px] lg:sticky lg:top-10  col-span-full lg:col-span-3 p-4 py-12 sd br" >
+			className=" sm:rounded-xl bg-[#0a192f] select-none w-full max-h-[550px] lg:sticky lg:top-10  col-span-full lg:col-span-3 p-4 py-12 shadow-sm sm:sd br" >
 			<div className="relative w-20 h-20 mx-auto overflow-hidden rounded-full bg-gray-50">
 				<Image
 					objectFit="cover"
