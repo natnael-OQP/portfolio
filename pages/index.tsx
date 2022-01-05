@@ -14,7 +14,7 @@ const  Home = ({about})=> {
       </Head>
       <main>
         <div className="px-2 md:px-8 pt-5 pb-10 space-y-4 ">
-          <h5 className="pb-2 font-mono font-base normal text- text-color1" >{about.name}</h5>
+          <h3 className="pb-2 font-mono text-base normal  text-color1" >{about.name}</h3>
           <h1 className="text-3xl md:text-[65px] leading-none text-h font-bold text-color3" >{about.title1}</h1>
           <h1 className="text-3xl md:text-[65px] leading-none font-bold text-color2" >{about.title2}</h1>
           <p className="pt-2 text-color2 w-full md:w-[70%] font-medium text-sm font-popi  break-words py-8" >{about.description}</p>
