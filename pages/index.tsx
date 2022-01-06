@@ -22,7 +22,7 @@ const  Home = ({about})=> {
           <Link scroll={false}  passHref href="/projects" >
             <button className="px-5 py-[14px] mt-4 text-[14px] border rounded-md border-color1 text-color1 hover:bg-color1 hover:bg-opacity-10 fx font-normal font-popi" >
               {about.buttonText}
-              <ChevronDoubleRightIcon className="h-5 ml-2 animate-pulse" />
+              <ChevronDoubleRightIcon className="h-5 ml-2" />
             </button>
           </Link>
         </div>
