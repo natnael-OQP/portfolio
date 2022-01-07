@@ -3,6 +3,8 @@ import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import { ChevronDoubleRightIcon } from '@heroicons/react/solid';
 import { AboutData } from '../Data';
+import { motion } from 'framer-motion';
+import { SpringFadeUp,SpringFadeUpRight } from '../motion';
 
 const  Home = ({about})=> {
   return (
@@ -12,8 +14,16 @@ const  Home = ({about})=> {
         <meta name="description" content="About page created by natnaelOPQ full info about natnael" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <div className="px-2 md:px-8 pt-5 pb-10 space-y-4 ">
+      <motion.main
+          variants={SpringFadeUpRight}
+          initial="initial"
+          animate="animate"
+      >
+        <motion.div
+          variants={SpringFadeUp}
+          initial="initial"
+          animate="animate"
+          className="px-2 md:px-8 pt-5 pb-10 space-y-4 ">
           <h3 className="pb-2 font-mono text-base normal  text-color1" >{about.name}</h3>
           <h1 className="text-3xl md:text-[65px] leading-none text-h font-bold text-color3" >{about.title1}</h1>
           <h1 className="text-3xl md:text-[65px] leading-none font-bold text-color2" >{about.title2}</h1>
@@ -25,8 +35,8 @@ const  Home = ({about})=> {
               <ChevronDoubleRightIcon className="h-5 ml-2" />
             </button>
           </Link>
-        </div>
-      </main>
+        </motion.div>
+      </motion.main>
     </div>
   )
 }

@@ -1,6 +1,8 @@
 import { FunctionComponent, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
+import { FadeUpTop } from '../motion';
 
 const NavItem: FunctionComponent<{
     active: string,
@@ -30,7 +32,10 @@ const Navbar = () => {
         
     },[])
     return (
-        <div
+        <motion.div
+            variants={FadeUpTop}
+            initial="initial"
+            animate="animate"
             style={{ 
 				marginLeft:'-1rem',
 				marginRight:'-1rem',
@@ -38,12 +43,13 @@ const Navbar = () => {
             className="justify-between px-6 py-3 shadow-sm fx"
         >
             <h1 className="text-xl font-semibold tracking-wider border-b font-lg text-color1 border-color1" >{active}</h1>
-            <div className="space-x-4 fx " >
+            <div
+                className="space-x-4 fx " >
                 <NavItem id='01' active={active} setActive={setActive} name={'About'} route={'/'}  />
                 <NavItem id='02' active={active} setActive={setActive} name={'Resume'} route={'resume'}  />
                 <NavItem id='03' active={active} setActive={setActive} name={'Work'} route={'projects'}  />
             </div>
-        </div>
+        </motion.div>
     )
 }
 
