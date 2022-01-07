@@ -14,10 +14,10 @@ const SmallCard = ({name,description,github_url,deployed_url,key_techs}) => {
                 <FiFolder className="h-7 w-7 text-color1 " />
                 <div className="flex items-center space-x-3" >
                     <a href={github_url} target="_blank" rel="noreferrer"  >
-                        <FiGithub className="h-5 w-5 text-color3 " />
+                        <FiGithub className="hover:text-color1  h-5 w-5 text-color3 " />
                     </a>
                     <a href={deployed_url} target="_blank" rel="noreferrer"  >
-                        <FiExternalLink className="h-5 w-5 text-color3 " />
+                        <FiExternalLink className="hover:text-color1  h-5 w-5 text-color3 " />
                     </a>
                 </div>
             </div>
