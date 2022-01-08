@@ -1,4 +1,12 @@
-module.exports = {
+const withPWA = require("next-pwa");
+
+module.exports = withPWA({
+	pwa: {
+		dest: "public",
+		register: true,
+		skipWaiting: true,
+		disable: process.env.NODE_ENV === "development",
+	},
 	reactStrictMode: true,
 	images: {
 		domains: ["lh3.googleusercontent.com"],
@@ -7,4 +15,4 @@ module.exports = {
 		imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
 		minimumCacheTTL: 60,
 	},
-};
+});
