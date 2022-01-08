@@ -5,8 +5,11 @@ class MyDocument extends Document {
 		return (
 			<Html lang="en" >
 				<Head lang="en">
-					{/* <link rel="preconnect" href="https://fonts.googleapis.com"/> */}
-					{/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/> */}
+					<link rel="manifest" href="/manifest.json" />
+					<link rel="apple-touch-icon" href="/icon.png"></link>
+					<meta name="theme-color" content="#fff" />
+					<link rel="preconnect" href="https://fonts.googleapis.com"/>
+					<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />
 					<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
                 </Head>
 				<body>
