@@ -5,9 +5,8 @@ export const AboutData: IAbout = {
 	name: "Hi, my name is",
 	title1: "Natnale Abebe.",
 	title2: " I build things for the web.",
-	description:
-		"I'm currently in my fourth year (out of five) studying computer science at University Of Gondar. I enjoy building exceptional digital experiences. Currently, I’m focused on building an E-commerce PWA site.   I'm experienced in developing  products for the web, from simple landing pages to full-fledged web apps.",
-	buttonText: "check out my projects",
+	description: "I’m a FullStack web developer. Focused on building products that will make people's lives better.  I love to learn new things and I am always open to learn new technologies. I'm experienced in developing products for the web, from simple landing pages to full-fledged web apps.",
+    buttonText: "check out my projects",
 };
 // ---------------------------------------------------------------- languages
 export const languages: ISkill[] = [
