@@ -55,7 +55,7 @@ const Sidebar = () => {
 			>
 				<div className=" justify-end flex gap-x-3 items-center min-w-[70%] ">
 					<LocationMarkerIcon className="h-5 text-color2" />
-					<span className="sideh5" >Addise Abebe (kaliti) </span>
+					<span className="sideh5" > Addis Ababa (kaliti) </span>
 				</div>
 				{/* Phone Number */}
 				<a href="tel:+251941248799" className="justify-end flex gap-x-3 items-center min-w-[70%]">
